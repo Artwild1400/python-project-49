@@ -12,5 +12,9 @@ publish:
 
 package-install:
 	python3 -m pip install --user dist/*.whl
- 
 
+init:
+	poetry run flake8 brain_games
+
+.PHONY: install brain-games build publish package-install init
+ 
